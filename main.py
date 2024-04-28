@@ -24,7 +24,6 @@ def search_google(query):
         # Wait for search results to load
         WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CLASS_NAME, "rc")))
 
-        # Extract search results
         search_results = driver.find_elements(By.CLASS_NAME, "rc")
 
         # Filter relevant links
@@ -46,6 +45,6 @@ def main(search_query):
         product_details = scrape_website(link)
         # Add code to process and store product details
 
-# Example usage
+# usage
 search_query = "PC Monitors"
 main(search_query)
