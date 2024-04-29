@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 from functools import partial
-from . import main
+import main
 
 
 def search(output_text, search_query_var):
