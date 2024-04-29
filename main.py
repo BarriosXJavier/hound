@@ -10,11 +10,10 @@ def search_google(query):
     # Initialize Chrome driver
     service = Service(executable_path="./chromedriver")
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
     driver = webdriver.Chrome(service=service, options=options)
 
     try:
-        # Navigate to Google
+        # Navigate to url
         driver.get("https://www.google.com")
 
         # Search for the query
